@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smooth_background"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="Welcome to Login Page"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <!-- Description -->
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Security is not a product, but a process."
+        android:layout_below="@+id/title"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        android:layout_marginLeft="70sp" />
+
+    <!-- Login Form -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:layout_below="@+id/textDescription">
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="16dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:background="@drawable/gradient"
+            android:padding="12dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etUsername"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/gradient"
+            android:padding="12dp" />
+
+        <!-- Forgot Password -->
+        <TextView
+            android:id="@+id/textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:layout_marginLeft="150dp"
+            android:layout_below="@id/etPassword"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPassword"
+            android:layout_marginTop="16dp"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button"
+            android:padding="16dp" />
+
+        <!-- Icons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_below="@id/btnLogin"
+            android:padding="16dp">
+
+            <!-- Icon 1 -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/facebook" />
+
+            <!-- Icon 2 -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/instagram" />
+
+            <!-- Icon 3 -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/social" />
+        </LinearLayout>
+
+        <!-- Register Text -->
+        <TextView
+            android:id="@+id/textRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register now"
+            android:layout_below="@id/btnLogin"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</RelativeLayout>

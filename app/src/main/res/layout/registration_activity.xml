@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/smooth_background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Create an Account"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/light_gray"
+        android:background="@drawable/button"/>
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginBottom="16dp"
+        android:hint="First Name"
+        android:textSize="18sp"
+        android:background="@drawable/gradient"
+        android:padding="12dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etFirstName"
+        android:layout_marginBottom="16dp"
+        android:hint="Last Name"
+        android:textSize="18sp"
+        android:background="@drawable/gradient"
+        android:padding="12dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etLastName"
+        android:layout_marginBottom="16dp"
+        android:hint="Email"
+        android:textSize="18sp"
+        android:background="@drawable/gradient"
+        android:padding="12dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_marginBottom="32dp"
+        android:hint="Password"
+        android:textSize="18sp"
+        android:background="@drawable/gradient"
+        android:padding="12dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:text="Register"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button"
+
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:layout_below="@+id/btnRegister"
+        android:textStyle="italic"
+        android:id="@+id/textView"
+        />
+
+</RelativeLayout>
