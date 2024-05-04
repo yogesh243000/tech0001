@@ -18,7 +18,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
         android:backgroundTint="@color/light_gray"
-        android:background="@drawable/button"/>
+        android:background="@drawable/button_color"/>
 
     <EditText
         android:id="@+id/etFirstName"
@@ -75,7 +75,7 @@
         android:text="Register"
         android:textSize="20sp"
         android:textColor="@android:color/white"
-        android:background="@drawable/button"
+        android:background="@drawable/button_color"
 
         android:padding="12dp"
         android:layout_marginTop="16dp"
