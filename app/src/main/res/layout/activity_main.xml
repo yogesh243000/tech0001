@@ -29,9 +29,9 @@
         android:backgroundTint="@color/light_gray"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:text="Welcome to Shop"
+        android:text="Welcome to Technology Shop"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="25sp"
 
         android:textStyle="bold" />
 

@@ -28,7 +28,7 @@
         android:textStyle="bold"
         android:layout_marginTop="16dp"
         android:textColor="@color/black"
-        android:background="@drawable/buttonColour"
+        android:background="@drawable/button_color"
         android:backgroundTint="@color/light_gray"
 
         />
