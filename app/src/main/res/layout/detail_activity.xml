@@ -63,8 +63,7 @@
         android:layout_below="@id/text_product_price"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:minValue="1"
-        android:maxValue="10"/>
+      />
 
     <!-- Add to Cart Button -->
     <Button

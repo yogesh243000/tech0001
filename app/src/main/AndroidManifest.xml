@@ -24,6 +24,13 @@
         <activity android:name="RegistrationaPage"/>
         <activity android:name="LoginPage"/>
         <activity android:name="HomePage"/>
+        <activity android:name="CartPage"/>
+
+        <activity android:name="DetailPage"/>
+        <activity android:name="PurchaseHistoryPage"/>
+        <activity android:name="SearchPage"/>
+        <activity android:name="CheckoutPage"/>
+
     </application>
 
 
