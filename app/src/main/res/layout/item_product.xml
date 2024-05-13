@@ -1,52 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:padding="8dp"
-    android:background="?android:attr/selectableItemBackground">
-
-    <LinearLayout
+    android:layout_marginTop="10dp"
+    >
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/img1"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:id="@+id/name1"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Name"
+        android:layout_toEndOf="@+id/img1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="email@gmail.com"
+        android:layout_toEndOf="@+id/img1"
+        android:layout_below="@+id/name1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#CDDC39"
+        android:layout_below="@id/img1"
+        android:layout_marginTop="10dp"/>
 
-        <ImageView
-            android:id="@+id/productImageView"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/simple_login_logo_for_website_png_file" />
-
-        <TextView
-            android:id="@+id/productNameTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Product Name"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginTop="8dp"/>
-
-        <TextView
-            android:id="@+id/productPriceTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Product Price"
-            android:textSize="14sp"
-            android:textColor="@color/black"
-            android:layout_marginTop="4dp"/>
-
-        <!-- Add more views for additional product details -->
-
-        <Button
-            android:id="@+id/addToCartButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add to Cart"
-            android:layout_marginTop="8dp"/>
-
-        <!-- Add more views here as needed -->
-
-    </LinearLayout>
-
-</androidx.cardview.widget.CardView>
+</RelativeLayout>

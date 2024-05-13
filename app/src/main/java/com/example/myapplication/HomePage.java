@@ -75,15 +75,14 @@ public class HomePage extends AppCompatActivity {
                 finish(); // Close the current activity to prevent going back to it after logout
             }
         });
-
-       /* productsIcon.setOnClickListener(new View.OnClickListener() {
+        productsIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Handle click event for the products icon
                 // For example, navigate to the Products activity
-                Intent intent = new Intent(HomePage.this, Product.class);
+                Intent intent = new Intent(HomePage.this, ProductPage.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }
