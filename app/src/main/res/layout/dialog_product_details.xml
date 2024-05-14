@@ -4,14 +4,24 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Close button -->
+    <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/close"
+        android:layout_gravity="end"
+        />
+
     <!-- ImageView for product image -->
     <ImageView
         android:id="@+id/imageViewProduct"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         android:layout_marginBottom="8dp"/>
+
 
     <TextView
         android:id="@+id/textViewName"
@@ -33,5 +43,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="16sp"/>
+
+    <!-- Button for adding to cart -->
+    <Button
+        android:id="@+id/addToCartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_color"
+        android:textColor="@color/white"/>
 
 </LinearLayout>

@@ -3,13 +3,13 @@ package com.example.myapplication;
 public class Product {
     String ProductName;
     String ProductDescription;
-    int ProductPrice;
+    String ProductPrice;
     int ProductImage;
     private int selectedCount;
-    public Product(String productName, String productDescription, int productPrice, int productImage) {
+    public Product(String productName, String productDescription, String productPrice, int productImage) {
         ProductName = productName;
         ProductDescription = productDescription;
-        ProductPrice = productPrice;
+        ProductPrice = "$" + productPrice;
         ProductImage = productImage;
         this.selectedCount = selectedCount;
     }
@@ -30,19 +30,21 @@ public class Product {
         ProductDescription = productDescription;
     }
 
-    public int getProductPrice() {
+    public String getProductPrice() {
         return ProductPrice;
     }
 
-    public void setProductPrice(int productPrice) {
+    public void setProductPrice(String productPrice) {
         ProductPrice = productPrice;
     }
+
     public int getProductImage() {
         return ProductImage;
     }
     public int getSelectedCount() {
         return selectedCount;
     }
+
 
     public void setSelectedCount(int selectedCount) {
         this.selectedCount = selectedCount;

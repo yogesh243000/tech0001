@@ -1,29 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:padding="16dp"
     android:background="@drawable/smooth_background">
 
     <!-- Product Image -->
     <ImageView
         android:id="@+id/imageViewProduct"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:scaleType="centerCrop"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:adjustViewBounds="true"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+       
+        android:scaleType="centerCrop"
+        />
 
     <!-- Product Name -->
     <TextView
         android:id="@+id/textViewProductName"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Product Name"
-        android:textSize="16sp"
         android:textColor="@android:color/black"
-        android:layout_marginBottom="4dp"/>
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/imageViewProduct"
+        android:layout_alignTop="@id/imageViewProduct"
+        android:layout_marginLeft="16dp"
+        android:ellipsize="end"
+        />
+
+    <!-- Product Price -->
+    <TextView
+        android:id="@+id/textViewProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Price"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/textViewProductName"
+        android:layout_alignLeft="@id/textViewProductName"
+        android:layout_alignStart="@id/textViewProductName"
+        android:layout_marginTop="8dp"/>
 
     <!-- Product Description -->
     <TextView
@@ -33,16 +51,11 @@
         android:text="Product Description"
         android:textSize="14sp"
         android:textColor="@android:color/darker_gray"
-        android:layout_marginBottom="8dp"/>
-
-    <!-- Product Price -->
-    <TextView
-        android:id="@+id/textViewProductPrice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Product Price"
-        android:textSize="18sp"
-        android:textColor="@android:color/black"/>
+        android:layout_below="@id/imageViewProduct"
+        android:layout_alignLeft="@id/imageViewProduct"
+        android:layout_alignStart="@id/imageViewProduct"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"/>
 
     <!-- Product Count -->
     <TextView
@@ -52,6 +65,9 @@
         android:text="Selected: 0"
         android:textSize="14sp"
         android:textColor="@android:color/black"
+        android:layout_below="@id/textViewProductPrice"
+        android:layout_alignLeft="@id/textViewProductPrice"
+        android:layout_alignStart="@id/textViewProductPrice"
         android:layout_marginTop="8dp"/>
 
-</LinearLayout>
+</RelativeLayout>

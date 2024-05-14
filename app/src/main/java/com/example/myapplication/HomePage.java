@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class HomePage extends AppCompatActivity {
 
-    ImageView homeIcon, searchIcon, cartIcon, settingsIcon, logoutIcon, productsIcon;
+    ImageView homeIcon, historyIcon, cartIcon, settingsIcon, logoutIcon, productsIcon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class HomePage extends AppCompatActivity {
 
         // Initialize ImageView references
         homeIcon = findViewById(R.id.home_img);
-        searchIcon = findViewById(R.id.search);
+        historyIcon = findViewById(R.id.history);
         cartIcon = findViewById(R.id.cart);
         settingsIcon = findViewById(R.id.settings);
         logoutIcon = findViewById(R.id.logout);
@@ -36,12 +36,12 @@ public class HomePage extends AppCompatActivity {
             }
         });
 */
-        searchIcon.setOnClickListener(new View.OnClickListener() {
+        historyIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Handle click event for the search icon
                 // For example, navigate to the Search activity
-                Intent intent = new Intent(HomePage.this, SearchPage.class);
+                Intent intent = new Intent(HomePage.this, PurchaseHistory.class);
                 startActivity(intent);
             }
         });

@@ -44,8 +44,8 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/loupe"
-                    android:id="@+id/search"
+                    android:src="@drawable/history"
+                    android:id="@+id/history"
 
                     />
 
@@ -53,7 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Search"
+                    android:text="Purchase History"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
