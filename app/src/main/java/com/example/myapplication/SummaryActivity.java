@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,5 +43,13 @@ public class SummaryActivity extends AppCompatActivity {
             Purchase purchase = new Purchase(fullName, address, phone, email, productName, productPrice);
             PurchaseHistory.getInstance().addPurchase(purchase);
         }
+
+    }
+
+    public void backToHome(View view) {
+        Intent intent = new Intent(this, ProductPage.class);
+        startActivity(intent);
+        // Finish the SummaryActivity to remove it from the back stack
+        finish();
     }
 }

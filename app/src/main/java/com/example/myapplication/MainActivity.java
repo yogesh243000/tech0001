@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 
 public class MainActivity extends AppCompatActivity {
-    Button button;
+    Button button, button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Initialize button and set OnClickListener
         button = findViewById(R.id.btn);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,5 +40,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        button2 = findViewById(R.id.btn1);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Start LoginPage activity
+                Intent intent = new Intent(MainActivity.this, LoginPage.class);
+                startActivity(intent);
+            }
+        });
     }
+
 }

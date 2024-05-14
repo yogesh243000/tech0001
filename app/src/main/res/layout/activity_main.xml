@@ -8,15 +8,15 @@
     tools:context=".MainActivity">
 
     <!-- ImageView -->
+
+    <!-- Title TextView -->
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"
         android:scaleType="centerCrop"
         android:src="@drawable/shops" />
 
-    <!-- Title TextView -->
     <TextView
         android:id="@+id/text"
         android:layout_width="360dp"
@@ -29,7 +29,7 @@
         android:backgroundTint="@color/light_gray"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:text="Welcome to Technology Shop"
+        android:text="Welcome to TechNest"
         android:textColor="@color/black"
         android:textSize="25sp"
 
@@ -43,29 +43,47 @@
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text"
+
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="272dp"
         android:fontFamily="sans-serif-light"
         android:gravity="center_horizontal"
-        android:text="Descriptions"
-        android:textColor="@color/black"
+        android:text="A cozy corner where cutting-edge technology finds its home, offering the latest gadgets and gear."
+        android:textColor="#FFEB3B"
         android:textSize="20sp"
 
-        android:textStyle="italic" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="90dp"
         android:background="@drawable/button_color"
         android:paddingStart="24dp"
         android:paddingEnd="24dp"
         android:text="Get Started"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="89dp"
+        android:background="@drawable/button_color"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="Login"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
